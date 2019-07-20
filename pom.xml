@@ -8,6 +8,8 @@
   <url>http://www.portletbridge.org</url>
   <properties>
     <maven.scm.provider.cvs.implementation>cvs_native</maven.scm.provider.cvs.implementation>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
   <dependencies>
     <dependency>
