@@ -1,0 +1,7 @@
+Bundle-Name: portletbridge-core
+Bundle-SymbolicName: org.portletbridge.portlet
+Export-Package: \
+	org.portletbridge,\
+	org.portletbridge.portlet,\
+	org.portletbridge.xsl
+-includeresource: lib/nekohtml-0.9.5.jar=nekohtml-0.9.5.jar;lib:=true

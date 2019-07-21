@@ -88,6 +88,34 @@
           <locales>en</locales>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
+        <version>4.2.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>bnd-process</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>biz.aQute.bnd</groupId>
+            <artifactId>biz.aQute.bndlib</artifactId>
+            <version>4.2.0</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+	      <archive>
+	        <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+	      </archive>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <modules>
